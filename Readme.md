@@ -57,31 +57,29 @@ The project uses the following datasets:
 ## 🛠️ Tools and Technologies Used  
 - **Microsoft Excel**  
   - Data Cleaning  
-  - Pivot Tables  
-  - Formulas & Functions   
+  - Pivot Tables     
 - **MS Power Query** (for initial transformation)  
 
 ---
 
 ## 📁 Project Structure  
-## 📂 Project Folder Structure
 
 KPMG-Data-Analysis-Excel/
 │
 ├── Task1_Data_Cleaning/
-│   └── Task1_Data_Cleaning.xlsx
+│ └── Task1_Data_Cleaning.xlsx
 │
 ├── Task2_Customer_Segmentation/
-│   └── Task2_Customer_Segmentation.xlsx
+│ └── Task2_Customer_Segmentation.xlsx
 │
 ├── Task3_Transaction_Analysis/
-│   └── Task3_Transaction_Analysis.xlsx
+│ └── Task3_Transaction_Analysis.xlsx
 │
 ├── Task4_New_Customer_Insights/
-│   └── Task4_New_Customer_Insights.xlsx
+│ └── Task4_New_Customer_Insights.xlsx
 │
 ├── Task5_CLV_Analysis/
-│   └── Task5_CLV_Analysis.xlsx
+│ └── Task5_CLV_Analysis.xlsx
 │
 └── README.md
 
