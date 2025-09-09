@@ -6,25 +6,23 @@ The goal of this project is to analyze customer demographics, transactions, and 
 ---
 
 ## 📑 Table of Contents  
-- [Overview](#overview)  
-- [Problem Statement](#problem-statement)  
-- [Dataset Information](#dataset-information)  
-- [Tools and Technologies Used](#tools-and-technologies-used)  
-- [Project Structure](#project-structure)  
-- [Methods](#methods)  
-- [📊 Key Insights](#-key-insights)  
-  - [Task 1: Data Cleaning](#task-1-data-cleaning)  
-  - [Task 2: Customer Segmentation](#task-2-customer-segmentation)  
-  - [Task 3: Transaction Analysis](#task-3-transaction-analysis)  
-  - [Task 4: New Customer Insights](#task-4-new-customer-insights)  
-  - [Task 5: Customer Lifetime Value (CLV) Analysis](#task-5-customer-lifetime-value-clv-analysis)  
-- [How to Run the Project](#how-to-run-the-project)  
-- [Recommendations](#recommendations)  
-- [Author & Contact](#author--contact)  
+ 
+- <a href="#overview">Overview</a>
+- <a href="#business-problem">Business Problem</a>
+- <a href="#dataset">dataset-information</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#methods">Methods</a>
+- <a href="#key insights">Key Insights</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#final-recommendations">Final Recommendations</a>
+- <a href="#author--contact">Author & Contact</a>
+
 
 ---
 
-## 📖 Overview  
+<h2><a class="anchor" id="overview"></a>Overview</h2>
+
 This project is part of the **Data Management and Analysis with MS Excel course**.  
 It involves analyzing customer and transaction datasets to:  
 - Clean and prepare the data for analysis.  
@@ -35,14 +33,14 @@ It involves analyzing customer and transaction datasets to:
 
 ---
 
-## ❓ Problem Statement  
+<h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
 The airline and retail industries generate large volumes of customer and transaction data.  
 Without proper analysis, valuable insights into customer demographics, purchasing patterns, and long-term value may be missed.  
 This project provides a structured Excel-based analysis to address these challenges.  
 
 ---
 
-## 📂 Dataset Information  
+<h2><a class="anchor" id="dataset"></a>Dataset</h2> 
 The project uses the following datasets:  
 - **Customer Address Data** – customer_id, address, postcode, state, country, property_valuation.  
 - **Customer Demographic Data** –   customer_id, first_name, last_name, gender, past_3_years_bike_related_purchases, DOB, job_title, job_industry_category, wealth_segment, deceased_indicator, default, owns_car, tenure.
@@ -54,7 +52,8 @@ The project uses the following datasets:
 
 ---
 
-## 🛠️ Tools and Technologies Used  
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
+ 
 - **Microsoft Excel**  
   - Data Cleaning  
   - Pivot Tables     
@@ -62,31 +61,33 @@ The project uses the following datasets:
 
 ---
 
-## 📁 Project Structure  
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
-vendor-performance-analysis/
+```
+KPMG-Data-Analysis-Excel/
 │
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── Vendor Performance Report.pdf
+├── Task1_Data_Cleaning/
+│ └── Task1_Data_Cleaning.xlsx
 │
-├── notebooks/                  # Jupyter notebooks
-│   ├── exploratory_data_analysis.ipynb
-│   ├── vendor_performance_analysis.ipynb
+├── Task2_Customer_Segmentation/
+│ └── Task2_Customer_Segmentation.xlsx
 │
-├── scripts/                    # Python scripts for ingestion and processing
-│   ├── ingestion_db.py
-│   └── get_vendor_summary.py
+├── Task3_Transaction_Analysis/
+│ └── Task3_Transaction_Analysis.xlsx
 │
-├── dashboard/                  # Power BI dashboard file
-│   └── vendor_performance_dashboard.pbix
-
-
+├── Task4_New_Customer_Insights/
+│ └── Task4_New_Customer_Insights.xlsx
+│
+├── Task5_CLV_Analysis/
+│ └── Task5_CLV_Analysis.xlsx
+│
+└── README.md
+``` 
 
 ---
 
-## ⚙️ Methods  
+<h2><a class="anchor" id="methods"></a>Methods</h2>
+
 1. **Data Cleaning**  
    - Removed duplicates, corrected invalid entries, standardized missing data, and ensured consistent formatting.  
 2. **Customer Segmentation**  
@@ -97,14 +98,14 @@ vendor-performance-analysis/
    - Analyzed demographics, location, and property valuation of new customers.  
 5. **CLV Analysis**  
    - Applied formula:  
-     \[
+     \
      CLV = (Average Purchase Value * Purchase Frequency) \ (Customer Lifespan)
-     \]  
+     \ 
    - Compared CLV across wealth segments, gender, and industries.  
 
 ---
 
-## 📊 Key Insights  
+<h2><a class="anchor" id="key insights"></a>Key Insights</h2>
 
 ### Task 1: Data Cleaning  
 - Standardized state names and gender representation.  
@@ -157,15 +158,13 @@ vendor-performance-analysis/
 
 ---
 
-## ▶️ How to Run the Project?  
+<h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 1. Clone this repository:  
    ```bash
    git clone https://github.com/yourusername/KPMG-Data-Analysis-Excel.git
 
 
-# 🚴 Recommendations
-
-
+<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
 ---
 
 ## 📌 Task 1: Customer Strategy
@@ -226,7 +225,7 @@ vendor-performance-analysis/
 
 ---
 
-## 👤 Author & Contact
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
 
 **Name:** Abhishek Tandle  
 **Email:** [abhishektandle1507@gmail.com](mailto:abhishektandle1507@gmail.com)  
