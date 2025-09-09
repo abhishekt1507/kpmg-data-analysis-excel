@@ -1,4 +1,4 @@
-# ✈️ KPMG Data Analysis using Excel  
+#  KPMG Data Analysis using Excel  
 
 ## 🎯 Objective  
 The goal of this project is to analyze customer demographics, transactions, and new customer data using Microsoft Excel. The analysis aims to provide insights into business performance, customer behavior, and revenue opportunities through data cleaning, segmentation, transaction analysis, and Customer Lifetime Value (CLV) calculation.  
@@ -34,7 +34,7 @@ It involves analyzing customer and transaction datasets to:
 ---
 
 <h2><a class="anchor" id="business-problem"></a>Business Problem</h2>
-The airline and retail industries generate large volumes of customer and transaction data.  
+The retail industries generate large volumes of customer and transaction data.  
 Without proper analysis, valuable insights into customer demographics, purchasing patterns, and long-term value may be missed.  
 This project provides a structured Excel-based analysis to address these challenges.  
 
@@ -42,7 +42,9 @@ This project provides a structured Excel-based analysis to address these challen
 
 <h2><a class="anchor" id="dataset"></a>Dataset</h2> 
 The project uses the following datasets:  
+
 - **Customer Address Data** – customer_id, address, postcode, state, country, property_valuation.  
+
 - **Customer Demographic Data** –   customer_id, first_name, last_name, gender, past_3_years_bike_related_purchases, DOB, job_title, job_industry_category, wealth_segment, deceased_indicator, default, owns_car, tenure.
 
 - **Transaction Data** –  transaction_id, product_id, customer_id, transaction_date, online_order, order_status, brand, product_line, product_class, product_size, list_price, standard_cost, product_first_sold_date
@@ -64,7 +66,7 @@ The project uses the following datasets:
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
 ```
-KPMG-Data-Analysis-Excel/
+kpmg-data-analysis-excel/
 │
 ├── Task1_Data_Cleaning/
 │ └── Task1_Data_Cleaning.xlsx
@@ -98,9 +100,9 @@ KPMG-Data-Analysis-Excel/
    - Analyzed demographics, location, and property valuation of new customers.  
 5. **CLV Analysis**  
    - Applied formula:  
-     \
-     CLV = (Average Purchase Value * Purchase Frequency) \ (Customer Lifespan)
-     \ 
+     
+   - CLV = (Average Purchase Value * Purchase Frequency) \ (Customer Lifespan)
+     
    - Compared CLV across wealth segments, gender, and industries.  
 
 ---
