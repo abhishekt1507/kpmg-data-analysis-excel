@@ -44,10 +44,13 @@ This project provides a structured Excel-based analysis to address these challen
 
 ## 📂 Dataset Information  
 The project uses the following datasets:  
-- **Customer Address Data** – customer addresses and states.  
-- **Customer Demographic Data** – demographics, gender, tenure, wealth segment, job industry.  
-- **Transaction Data** – transaction dates, list prices, product categories, and total sales.  
-- **New Customer Data** – demographics, address, wealth segment, job industry, and purchase behavior.  
+- **Customer Address Data** – customer_id, address, postcode, state, country, property_valuation.  
+- **Customer Demographic Data** –   customer_id, first_name, last_name, gender, past_3_years_bike_related_purchases, DOB, job_title, job_industry_category, wealth_segment, deceased_indicator, default, owns_car, tenure.
+
+- **Transaction Data** –  transaction_id, product_id, customer_id, transaction_date, online_order, order_status, brand, product_line, product_class, product_size, list_price, standard_cost, product_first_sold_date
+
+- **New Customer Data** –   first_name, last_name, gender, past_3_years_bike_related_purchases, DOB, job_title, job_industry_category, wealth_segment, deceased_indicator, owns_car, tenure, address, postcode, state, country, property_valuation, Rank, Value
+
 
 ---
 
@@ -55,21 +58,33 @@ The project uses the following datasets:
 - **Microsoft Excel**  
   - Data Cleaning  
   - Pivot Tables  
-  - Formulas & Functions  
-  - Charts & Visualizations  
+  - Formulas & Functions   
 - **MS Power Query** (for initial transformation)  
 
 ---
 
 ## 📁 Project Structure  
+## 📂 Project Folder Structure
+
 KPMG-Data-Analysis-Excel/
 │
-├── Task1_Data_Cleaning.xlsx
-├── Task2_Customer_Segmentation.xlsx
-├── Task3_Transaction_Analysis.xlsx
-├── Task4_New_Customer_Insights.xlsx
-├── Task5_CLV_Analysis.xlsx
+├── Task1_Data_Cleaning/
+│   └── Task1_Data_Cleaning.xlsx
+│
+├── Task2_Customer_Segmentation/
+│   └── Task2_Customer_Segmentation.xlsx
+│
+├── Task3_Transaction_Analysis/
+│   └── Task3_Transaction_Analysis.xlsx
+│
+├── Task4_New_Customer_Insights/
+│   └── Task4_New_Customer_Insights.xlsx
+│
+├── Task5_CLV_Analysis/
+│   └── Task5_CLV_Analysis.xlsx
+│
 └── README.md
+
 
 
 ---
@@ -159,45 +174,58 @@ KPMG-Data-Analysis-Excel/
 ## 📌 Task 1: Customer Strategy
 
 1. **High Net Worth & Affluent Customers**  
-   - VIP perks, early access, personal assistance.  
-   - Discounts, personal calls, feedback collection.  
+   - Provide **VIP experiences** such as priority service, early product access, and personal assistance.  
+   - Retain affluent customers with **exclusive discounts**, proactive engagement (personal calls), and feedback-driven improvements.  
 
-2. **Industry Focus**  
-   - Property & Finance → Premium products.  
-   - IT & Entertainment → Tech gadgets, lifestyle upgrades.  
+2. **Industry Segmentation**  
+   - **Property & Finance Professionals** → Highlight premium bikes, luxury add-ons, and investment-worthy models.  
+   - **IT & Entertainment Customers** → Position tech-driven bikes, smart accessories, and lifestyle-focused upgrades.  
 
-3. **Gender Preferences**  
-   - Men → Performance bikes, adventure gear.  
-   - Women → Style, comfort, safety; partner with influencers.  
+3. **Gender-Specific Campaigns**  
+   - **Men** → Promote performance bikes, adventure gear, and outdoor riding experiences.  
+   - **Women** → Emphasize comfort, style, and safety features; collaborate with women bikers/influencers to build trust.  
 
-4. **Regular Customers**  
-   - Bundles, upgrades, premium rewards.  
+4. **Regular (Mass) Customers**  
+   - Offer bundled packages and reward programs that encourage upgrades to premium models.  
 
-5. **Unknowns**  
-   - Collect missing data.  
-   - Test different campaigns.  
-
----
-
-## 📌 Task 3: Product & Sales
-
-- **Solex** → Expand variety, ensure stock.  
-- **Norco** → Boost awareness, bundles, possible redesign.  
-- **Standard Category** → Add variants, accessories, seasonal offers.  
-- **Road Category** → Premium upgrades, limited editions.  
-- **Mountain Category** → Either invest in niche or scale down.  
-- **Seasonal Campaigns** → Promotions (May, Aug, Oct); clearance (Jun, Sep).  
-- **Top Customers** → Upsell with loyalty perks & exclusives.  
+5. **Unknown Segment (Missing Data)**  
+   - Collect missing demographics through surveys and purchase data.  
+   - Run A/B testing with varied marketing messages to determine the most effective approach.  
 
 ---
 
-## 📌 Task 4: Regional Growth
+## 📌 Task 3: Product & Sales Strategy
 
-- **NSW (Core)** → More outlets, warehousing, seasonal campaigns.  
-- **Victoria (Strong)** → Pop-ups, expos, club tie-ups.  
-- **Queensland (Emerging)** → Outdoor/adventure bikes.  
-- **Rural** → Mobile vans, “Bike-on-Wheels” events.  
-- **Cross-Sell Premium** → VIP test-rides & memberships in NSW & VIC.  
+- **Solex (High Performer)** → Expand product range (colors, sizes, pricing tiers) and maintain strong stock levels, especially before peak seasons.  
+- **Norco (Low Demand)** → Increase brand awareness through marketing campaigns, bundle Norco with popular products, and evaluate redesign opportunities.  
+- **Standard Category (Revenue Leader)** → Introduce product variants, accessories, and limited-time seasonal discounts to strengthen its market share.  
+- **Road Category (Growth Opportunity)** → Offer premium upgrades, performance enhancements, and limited editions for cycling enthusiasts.  
+- **Mountain Category (Niche)** → Either reposition with premium adventure gear or reduce inventory to focus on stronger categories.  
+- **Seasonal Promotions** → Launch campaigns ahead of peak demand months (May, August, October) and clearance sales post-dip (June, September).  
+- **High-Value Customers** → Target loyal buyers (e.g., Jillie Fyndon, Glynnis Sailor) with personalized offers, early access to new launches, and loyalty rewards.  
+
+---
+
+## 📌 Task 4: Regional Growth Opportunities
+
+- **New South Wales (Core Growth Hub)**  
+  - Expand retail outlets in high-demand suburbs.  
+  - Strengthen warehousing for faster delivery.  
+  - Focus marketing efforts on peak demand months (May, August, October).  
+
+- **Victoria (Strong Secondary Market)**  
+  - Increase brand presence via pop-up stores, bike expos, and partnerships with cycling clubs.  
+
+- **Queensland (Emerging Market)**  
+  - Capitalize on year-round cycling demand.  
+  - Target outdoor and adventure enthusiasts with touring and mountain bikes.  
+
+- **Rural & Regional Expansion**  
+  - Deploy mobile service vans or organize “Bike-on-Wheels” events to reach underserved areas.  
+
+- **Cross-Sell Premium Segments**  
+  - Leverage NSW and Victoria’s affluent customer base with VIP memberships, exclusive test-ride events, and early product launches.  
+  
 
 ---
 
