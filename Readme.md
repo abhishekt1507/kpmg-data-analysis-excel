@@ -64,24 +64,23 @@ The project uses the following datasets:
 
 ## 📁 Project Structure  
 
-KPMG-Data-Analysis-Excel/
+vendor-performance-analysis/
 │
-├── Task1_Data_Cleaning/
-│ └── Task1_Data_Cleaning.xlsx
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── Vendor Performance Report.pdf
 │
-├── Task2_Customer_Segmentation/
-│ └── Task2_Customer_Segmentation.xlsx
+├── notebooks/                  # Jupyter notebooks
+│   ├── exploratory_data_analysis.ipynb
+│   ├── vendor_performance_analysis.ipynb
 │
-├── Task3_Transaction_Analysis/
-│ └── Task3_Transaction_Analysis.xlsx
+├── scripts/                    # Python scripts for ingestion and processing
+│   ├── ingestion_db.py
+│   └── get_vendor_summary.py
 │
-├── Task4_New_Customer_Insights/
-│ └── Task4_New_Customer_Insights.xlsx
-│
-├── Task5_CLV_Analysis/
-│ └── Task5_CLV_Analysis.xlsx
-│
-└── README.md
+├── dashboard/                  # Power BI dashboard file
+│   └── vendor_performance_dashboard.pbix
 
 
 
@@ -99,7 +98,7 @@ KPMG-Data-Analysis-Excel/
 5. **CLV Analysis**  
    - Applied formula:  
      \[
-     CLV = (Average\ Purchase\ Value \times Purchase\ Frequency) \times Customer\ Lifespan
+     CLV = (Average Purchase Value * Purchase Frequency) \ (Customer Lifespan)
      \]  
    - Compared CLV across wealth segments, gender, and industries.  
 
